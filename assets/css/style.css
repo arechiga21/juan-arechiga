@@ -11,14 +11,17 @@ body {
 }
 
 header {
-    position: sticky;
-    position: -webkit-sticky;
     text-align: center;
     background-color: #2e2d2d;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 25px 8% 25px 5%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    
 }
 
 header div {
@@ -29,7 +32,6 @@ header div {
 header h1 {
     font-size: 45px;
     color: aqua;
-    animation-duration: 4s;
 }
 
 header a {
@@ -52,8 +54,77 @@ header nav ul {
 header nav ul li a {
     padding: 0 20px;
     font-size: 1.40vw;
+    transition: all 0.5s;
 }
 
 header nav ul li a:hover {
+    color: aqua;
+}
+.background-image {
+    height: 700px;
+    width: 100%;
+    background-image: url(../images/image-2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: 0;
+}
+
+#content {
+    width: 100%;
+    position: relative;
+    top: 700px;
+    background-color:#b6b4b4;
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.info{
+    border-right: 5px solid aqua;
+    color: white;
+    background-color: #2e2d2d;
+    margin: 50px 0 50px 100px;
+    padding: 50px 10px;
+
+
+}
+
+.info h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.info h2 span {
+    transition: all 0.5s;
+}
+.info h2 span:hover {
+    color: aqua;
+}
+
+.bio {
+    margin: 100px 0px 100px 50px;
+    padding: 70px 20px 20px 20px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.8vw;
+    color: black;
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bio a {
+    color: black;
+}
+
+.bio a:hover{
     color: aqua;
 }
