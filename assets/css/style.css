@@ -151,10 +151,33 @@ header nav ul li a:hover {
 
 .project:first-child {
     height: 300px;
-    margin: 0 30% 0 30%;
+    margin: 0 35% 0 35%;
 }
 
 .project:first-child:hover {
     height: 350px;
 }
+
+address {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    padding: 70px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+address a {
+    padding: 0 8%;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+address a:hover {
+    color: aqua;
+}
+
    
