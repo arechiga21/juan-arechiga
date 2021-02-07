@@ -157,7 +157,6 @@ header nav ul li a:hover {
 }
 
 address {
-    height: 200px;
     width: 100%;
     text-align: center;
     padding: 70px 60px;
@@ -199,10 +198,20 @@ address a:hover {
 @media screen and (max-width: 768px) {
     header {
         justify-content: center;
+        position: relative;
+    }
+
+    .background-image {
+        position: relative;
     }
 
     address a {
         padding: 0 20px;
+        line-height: 2;
+    }
+
+    .content {
+        top: 0;
     }
 }
 
@@ -210,5 +219,24 @@ address a:hover {
     header {
         text-align: center;
     }
+
+    nav a {
+        line-height: 2;
+        margin: 0 20px;
+    }
+
+    .section h2 {
+        margin: 0;
+    }
+    
+    .bio {
+        padding: 0;
+    }
+
+    .projects a img {
+        width: 200px;
+    }
+
+
 }
    
