@@ -8,6 +8,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* header/nav start */
 header {
     text-align: center;
     background-color: #2e2d2d;
@@ -54,6 +55,7 @@ header nav ul li a {
 header nav ul li a:hover {
     color: aqua;
 }
+/* header/nav end */
 
 .background-image {
     height: 700px;
@@ -79,6 +81,7 @@ header nav ul li a:hover {
     flex-wrap: wrap;
 }
 
+/* section titles */
 .section h2 {
     font-size: 40px;
     font-weight: bolder;
@@ -99,6 +102,7 @@ header nav ul li a:hover {
     color: aqua;
 }
 
+/* about me info */
 .bio {
     display: flex;
     flex-wrap: wrap;
@@ -122,6 +126,7 @@ header nav ul li a:hover {
     color: aqua;
 }
 
+/* work setion start */
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -155,7 +160,9 @@ header nav ul li a:hover {
 .project:first-child:hover {
     height: 350px;
 }
+/* work section end */
 
+/* contact me section start */
 address {
     width: 100%;
     text-align: center;
@@ -176,7 +183,10 @@ address a {
 address a:hover {
     color: aqua;
 }
+/* contact me section end */
 
+
+/* media queries */
 @media screen and (max-width: 1024px) {
     header nav {
         padding-top: 10px;
